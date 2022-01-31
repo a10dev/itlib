@@ -1,0 +1,23 @@
+
+init.o:	/usr/include/ansi.h
+init.o:	/usr/include/errno.h
+init.o:	/usr/include/fcntl.h
+init.o:	/usr/include/limits.h
+init.o:	/usr/include/minix/dmap.h
+init.o:	/usr/include/minix/ioctl.h
+init.o:	/usr/include/minix/ipc.h
+init.o:	/usr/include/minix/sys_config.h
+init.o:	/usr/include/minix/type.h
+init.o:	/usr/include/signal.h
+init.o:	/usr/include/stdlib.h
+init.o:	/usr/include/string.h
+init.o:	/usr/include/sys/dir.h
+init.o:	/usr/include/sys/stat.h
+init.o:	/usr/include/sys/svrctl.h
+init.o:	/usr/include/sys/types.h
+init.o:	/usr/include/sys/wait.h
+init.o:	/usr/include/time.h
+init.o:	/usr/include/ttyent.h
+init.o:	/usr/include/unistd.h
+init.o:	/usr/include/utmp.h
+init.o:	init.c
