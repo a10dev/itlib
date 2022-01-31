@@ -1,0 +1,22 @@
+#include <windows.h>
+#include <commctrl.h>
+#include "resource.h"
+
+
+
+IDR_TVITEMS             BITMAP  DISCARDABLE     "tvitems.bmp"
+IDI_APP                 ICON    DISCARDABLE     "ctlmacro.ico"
+
+IDD_DIALOG DIALOG DISCARDABLE  0, 0, 341, 160
+STYLE                          DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION                        "Common Control Macros"
+FONT                           8, "MS Sans Serif"
+     {
+     DEFPUSHBUTTON   "&Close", IDOK,         282,   7,  50,  14
+     PUSHBUTTON      "&Copy",  IDC_COPY,     282,  24,  50,  14
+     CONTROL         "Tree1",  IDC_MESSAGES, "SysTreeView32", TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP, 
+									           7,   7, 266, 126
+     EDITTEXT                  IDC_MACROS,     7, 140, 326,  14, ES_AUTOHSCROLL | ES_NOHIDESEL
+     }
+
+

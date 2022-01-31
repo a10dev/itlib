@@ -1,0 +1,21 @@
+#include "caller.h"
+
+MAIN MENU
+     {
+     POPUP "&Allocator"
+          {
+          MENUITEM "&Create",  IDM_CREATE
+          MENUITEM "&Destroy", IDM_DESTROY
+          MENUITEM SEPARATOR
+          MENUITEM "QueryInterface IID_IUnknown", IDM_IUNKNOWN
+          MENUITEM "QueryInterface IID_IMalloc",  IDM_IMALLOC
+          MENUITEM "QueryInterface IID_IMarshal", IDM_IMARSHAL
+          }
+
+     POPUP "&Memory"
+          {
+          MENUITEM "&Allocate (IMalloc)", IDM_ALLOCATE_CUSTOM
+          MENUITEM "&Allocate (malloc)",  IDM_ALLOCATE_DEFAULT
+          MENUITEM "&Free",               IDM_FREE
+          }
+     }

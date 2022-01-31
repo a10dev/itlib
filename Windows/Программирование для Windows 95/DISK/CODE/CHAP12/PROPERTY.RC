@@ -1,0 +1,104 @@
+#include "property.h"
+#include <windows.h>
+
+IDI_APP                 ICON    DISCARDABLE     "PROPERTY.ICO"
+IDI_PAGE1               ICON    DISCARDABLE     "page1.ico"
+IDI_PAGE2               ICON    DISCARDABLE     "page2.ico"
+
+MAIN MENU DISCARDABLE 
+     {
+     POPUP "&Property-Sheet-Styles"
+          {
+          MENUITEM "PSH_WIZARD",                  IDM_WIZARD
+          MENUITEM SEPARATOR
+          MENUITEM "PSH_HASHELP",                 IDM_HASHELP
+          MENUITEM "PSH_MODELESS",                IDM_MODELESS
+          MENUITEM "PSH_NOAPPLYNOW",              IDM_NOAPPLYNOW
+          MENUITEM "PSH_PROPTITLE",               IDM_PROPTITLE
+          MENUITEM "PSH_RTLREADING",              IDM_RTLREADING
+          }
+     POPUP "&Window"
+          {
+          MENUITEM "Properties",                  IDM_WINDOW_PROPERTIES
+          }
+     }
+
+IDD_STYLES DIALOG DISCARDABLE  0, 0, 292, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Window Styles"
+FONT 8, "MS Sans Serif"
+     {
+     GROUPBOX        "&Initial State",IDC_STATIC,7,7,94,69
+     CONTROL         "WS_VISIBLE",IDC_VISIBLE,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,14,21,55,10
+     CONTROL         "WS_DISABLED",IDC_DISABLED,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,14,35,64,10
+     CONTROL         "WS_MINIMIZE",IDC_MINIMIZE,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,14,49,60,10
+     CONTROL         "WS_MAXIMIZE",IDC_MAXIMIZE,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,14,63,62,10
+     GROUPBOX        "&Clipping",IDC_STATIC,7,80,94,42
+     CONTROL         "WS_CLIPCHILDREN",IDC_CLIPCHILDREN,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,14,94,79,10
+     CONTROL         "WS_CLIPSIBLINGS",IDC_CLIPSIBLINGS,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,14,108,75,10
+     GROUPBOX        "&Window Components",IDC_STATIC,115,7,170,98
+     CONTROL         "WS_BORDER",IDC_BORDER,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,123,21,60,10
+     CONTROL         "WS_CAPTION",IDC_CAPTION,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,123,35,60,10
+     CONTROL         "WS_DLGFRAME",IDC_DLGFRAME,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,123,49,68,10
+     CONTROL         "WS_HSCROLL",IDC_HSCROLL,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,123,63,71,10
+     CONTROL         "WS_MAXIMIZEBOX",IDC_MAXIMIZEBOX,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,123,77,93,10
+     CONTROL         "WS_MINIMIZEBOX",IDC_MINIMIZEBOX,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,123,91,90,10
+     CONTROL         "WS_SYSMENU",IDC_SYSMENU,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,200,21,72,10
+     CONTROL         "WS_THICKFRAME",IDC_THICKFRAME,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,200,35,77,10
+     CONTROL         "WS_VSCROLL",IDC_VSCROLL,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,200,49,74,10
+     }
+
+IDD_EXSTYLES DIALOG DISCARDABLE  0, 0, 330, 161
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Extended Window Styles"
+FONT 8, "MS Sans Serif"
+     {
+     GROUPBOX        "&Non-Client Area",IDC_STATIC,7,7,263,71
+     CONTROL         "WS_EX_CLIENTEDGE",IDC_CLIENTEDGE,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,14,21,113,10
+     CONTROL         "WS_EX_CONTEXTHELP",IDC_CONTEXTHELP,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,14,35,116,10
+     CONTROL         "WS_EX_DLGMODALFRAME",IDC_DLGMODALFRAME,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,14,49,121,10
+     CONTROL         "WS_EX_OVERLAPPEDWINDOW",IDC_EXOVERLAPPED,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,14,63,127,10
+     CONTROL         "WS_EX_PALETTEWINDOW",IDC_PALETTE,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,149,21,113,10
+     CONTROL         "WS_EX_STATICEDGE",IDC_STATICEDGE,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,149,35,102,10
+     CONTROL         "WS_EX_TOOLWINDOW",IDC_TOOLWINDOW,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,149,49,101,10
+     CONTROL         "WS_EX_WINDOWEDGE",IDC_WINDOWEDGE,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,149,63,102,10
+     GROUPBOX        "&Shell Interface",IDC_STATIC,8,80,214,39
+     CONTROL         "WS_EX_ACCEPTFILES",IDC_ACCEPTFILES,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,14,90,97,10
+     CONTROL         "WS_EX_APPWINDOW",IDC_APPWINDOW,"Button",
+	                 BS_AUTOCHECKBOX | WS_TABSTOP,14,104,96,10
+     CONTROL         "WS_EX_TOPMOST",IDC_TOPMOST,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,118,90,88,10
+     CONTROL         "WS_EX_TRANSPARENT",IDC_TRANSPARENT,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,118,104,102,10
+     GROUPBOX        "&Child Window",IDC_STATIC,7,121,316,33
+     CONTROL         "WS_EX_CONTROLPARENT",IDC_CONTROLPARENT,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,14,135,105,10
+     CONTROL         "WS_EX_MDICHILD",IDC_MDICHILD,"Button",BS_AUTOCHECKBOX | 
+                     WS_TABSTOP,124,135,77,10
+     CONTROL         "WS_EX_NOPARENTNOTIFY",IDC_NOPARENTNOTIFY,"Button",
+                     BS_AUTOCHECKBOX | WS_TABSTOP,206,135,111,10
+     }

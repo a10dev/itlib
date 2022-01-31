@@ -1,0 +1,9 @@
+#define IDM_CREATE            1
+#define IDM_DESTROY           2
+#define IDM_IUNKNOWN          3
+#define IDM_IMALLOC           4
+#define IDM_IMARSHAL          5
+#define IDM_ALLOCATE_CUSTOM   6
+#define IDM_ALLOCATE_DEFAULT  7
+#define IDM_FREE              8
+#define IDM_CHECK             9

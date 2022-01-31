@@ -1,0 +1,57 @@
+;* These are the strings used to customize the Setup program. Setup reads these strings and displays them in the
+;* various dialog boxes used in the program. (Lines beginning with a semicolon are ignored. This is a useful way
+;* to leave comments.
+;*
+;* Feel free to change these strings; the Setup program will not need to be modified.
+;*
+;*
+;*
+;* IMPORTANT! IMPORTANT! IMPORTANT! IMPORTANT! IMPORTANT! IMPORTANT! IMPORTANT! IMPORTANT!
+;*
+;* The order of the strings _is_ critical. If you make changes please be sure to leave the
+;* strings in their original order!
+;*
+;*
+;*
+;*** Application name
+;
+Setup
+;
+;*** The "Welcome" dialog box
+;
+Welcome
+Welcome to the Programming Windows 95 Setup Program!
+;
+;*** The "Install where?" dialog box
+;
+Install Where?
+The Setup program will copy the practice files into the specified directory. Click OK to continue.
+;
+;*** Setup changes to the directory on the next line and installs all the files it finds there
+;
+code
+;
+;*** The "Are you sure you want to exit the setup program" dialog box
+;
+Are you sure?
+Setup has not completed installing the files. Are you sure you want to exit Setup?
+;
+;*** The "Installing" dialog box
+;
+Installing....
+Setup is installing
+;
+;*** The "Finished" dialog box
+;
+Finished!
+Setup has finished installing the Programming Windows 95 sample files. Enjoy!
+;
+;*** The "Not enough free disk space" dialog box
+;
+Not enough free space!
+You don't have enough free space to install the files. Please free up some space and try again.
+;
+;*** The "File exists" dialog box.
+;
+File Exists!
+A file with the same name already exists at the specified location. Do you want to overwrite the existing file?
